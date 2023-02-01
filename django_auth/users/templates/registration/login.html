@@ -1,11 +1,24 @@
-<!-- http://127.0.0.1:8000/accounts/login/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>autorizacia</title>
+    <style type="text/css">        h1{
+            font-size: 60px;
+           }
+        p{
+            color: black;
+            font-size: 40px;
+        }
+        body{
+          background:url(https://www.iguides.ru/upload/iguides_html/d0b/d0b0ea2bebd7cfe272b9a57a92c76839.jpg) no-repeat center center fixed;
+          background-size: cover;
+        }
 
-{% block title %}Login{% endblock %}
-
-{% block content %}
-  <h2>Login</h2>
-
-    <form method="post">
+    </style>
+</head>
+<body><h1>Registration</h1>
+<form method="post">
       {% csrf_token %}
       <table>
         {{ form.as_p }}
@@ -15,4 +28,5 @@
         </tr>
       </table>
     </form>
-{% endblock %}l>
+</body>
+</html>
