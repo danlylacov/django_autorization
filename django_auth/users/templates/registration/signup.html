@@ -1,8 +1,24 @@
-<!--/templates/register.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>autorizacia</title>
+    <style type="text/css">        h1{
+            font-size: 60px;
+           }
+        p{
+            color: black;
+            font-size: 40px;
+        }
+        body{
+          background:url(https://www.yeoandyeo.com/wp-content/uploads/cyber-security.jpg) no-repeat center center fixed;
+          background-size: cover;
+        }
 
-{% block content %}
-<h2>Register</h2>
 
+    </style>
+</head>
+<body><h1>Authorization</h1>
 <form method="post">
     {% csrf_token %}
     {{form}}
@@ -11,4 +27,5 @@
 
 <a href="{% url 'login' %}">Back to login</a>
 <a href="{% url 'home' %}">Back to Home</a>
-{% endblock %}
+</body>
+</html>
